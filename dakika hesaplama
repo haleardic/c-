@@ -1,0 +1,20 @@
+namespace dakika_hesaplama
+{
+    using System;
+
+    class Program
+    {
+        static void Main()
+        {
+            // TickCount milisaniye cinsindedir
+            int milisaniye = Environment.TickCount;
+
+            // Milisaniyeyi dakikaya çeviriyoruz, 1 dakika = 60000 milisaniye
+            double dakika = milisaniye / 60000.0;
+
+            Console.WriteLine("Bilgisayar açıldığından beri geçen süre (dakika cinsinden): " + dakika);
+            Console.ReadLine();
+        }
+    }
+
+}
